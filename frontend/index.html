@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SocketVerse.io</title>
+  <script src="https://cdn.socket.io/4.2.0/socket.io.js"></script>
+</head>
+<style>
+  #room {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    background-color: rgb(122, 116, 204); /* Verde */
+    position: relative;
+    margin: 10% auto;
+    border: 20px solid #ffd700; /* Dourado */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5); /* Efeito esfumaçado */
+  }
+
+  .player {
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+   
+    position: absolute;
+    background-image: url('./pngwing.com.png') !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: 2 2 black;
+  }
+
+  span {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    top: -20px; /* Posição acima do quadrado */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+</style>
+<body>
+  <main id="room">
+
+  </main>
+  <script src="./client.js"></script>
+</body>
+</html>
